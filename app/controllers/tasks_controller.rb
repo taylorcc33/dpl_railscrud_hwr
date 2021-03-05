@@ -13,14 +13,6 @@ class TasksController < ApplicationController
     render json: Task.find(params[:id])
   end
 
-  # def new
-
-  # end
-
-  # def edit
-
-  # end
-
   def create
     @task = Task.new(task_params)
 
