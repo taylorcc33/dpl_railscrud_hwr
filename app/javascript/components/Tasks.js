@@ -6,7 +6,14 @@ const Tasks = (props) => {
 
   const renderTasks = () => {
     return tasks.map((task) => {
-      return <Task key={task.id} {...task} deleteTask={deleteTask} editTask={editTask}/>;
+      return (
+        <Task
+          key={task.id}
+          {...task}
+          deleteTask={deleteTask}
+          editTask={editTask}
+        />
+      );
     });
   };
 
